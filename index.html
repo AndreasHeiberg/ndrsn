@@ -1,91 +1,79 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8">
 
-<head>
+		<title>ndrsn.dk</title>
 
-	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<!-- You should properly remove classie as a deppendency. It really doesn't give you anything that jQuery doesn't have -->
+		<script src="js/classie.js"></script>
+	</head>
 
-	<title>ndrsn.dk</title>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			
+		</nav>
 
-	<!--
-Copyright (c) 2013 by Secret Sam (http://codepen.io/seraphzz/pen/jozaw)
+		<div id="deck">
+			<div id="one" class="slide">
+				<button id="showRightPush"><i class="icon-reorder"></i></button>
+				<article>
+					<h1>
+						<a class="nav" href="#two"><img src="logo.png"></a>
+					</h1>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+					<div class="navigation">  
+						
+						<a class="nav down" href="#work"><i class="icon-angle-down"></i></a>
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+					</div>
+				</article>
+			</div>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
+			<div id="work" class="slide">
+				<article>
+					<div class="content">
+					 
+						<a href="#one" id="case1"></a>
+						<a href="#" id="case2"></a>
+						<a href="#" id="case3"></a>
+						<a href="#" id="case4"></a>
+						<a href="#" id="case5"></a>
 
-<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-<link href="css/font-awesome.css" rel="stylesheet">
-<!-- You should properly remove classie as a deppendency. It really doesn't give you anything that jQuery doesn't have -->
-<script src="js/classie.js"></script>
+					</div>
+				</article>
+			</div>
+		</div>
 
 
-</head>
-
-<body class="cbp-spmenu-push">
-	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
 		
-	</nav>
+		<script src="js/modernizr.js"></script>
+		<script src="js/deck.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+			var 
+			menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 
-	div.
-	<div id="one">
-		<button id="showRightPush"><i class="icon-reorder"></i></button>
-		<article>
-			<h1>
-				<a class="nav" href="index.html#two"><img src="logo.png"></a>
-			</h1>
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+			
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
 
-			<div class="navigation">  
-				
-				<a class="nav down" href="index.html#work"><i class="icon-angle-down"></i></a>
-
-			</div>
-		</article>
-	</div>
-	<div id="work">
-		<article>
-			<div class="content">
-			 
-				<a href="index.html#" id="case1"></a>
-				<a href="index.html#" id="case2"></a>
-				<a href="index.html#" id="case3"></a>
-				<a href="index.html#" id="case4"></a>
-				<a href="index.html#" id="case5"></a>
-
-			</div>
-		</article>
-	</div>
-
-
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
-	
-	<script src="js/modernizr.js"></script>
-	<script src="js/index.js" type="text/javascript"></script>
-	<script>
-	var 
-	menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-
-	showRightPush = document.getElementById( 'showRightPush' ),
-	body = document.body;
-	
-	showRightPush.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( body, 'cbp-spmenu-push-toleft' );
-		classie.toggle( menuRight, 'cbp-spmenu-open' );
-		disableOther( 'showRightPush' );
-	};
-	
-	function disableOther( button ) {
-		if( button !== 'showRightPush' ) {
-			classie.toggle( showRightPush, 'disabled' );
-		}
-	}
-	</script>
-
-</body>
-
+	</body>
 </html>

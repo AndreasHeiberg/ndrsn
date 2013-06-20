@@ -50,427 +50,427 @@ This can be minified - Check your json file!
 *,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
 
 
 html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1px;
-  -webkit-font-smoothing: antialiased;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
 }
 html h1, body h1 {
-  color: #fff;
-  margin-top: -40px;
-  margin-bottom: 40px;
-  font-size: 2.2rem;
-  text-transform: uppercase;
+	color: #fff;
+	margin-top: -40px;
+	margin-bottom: 40px;
+	font-size: 2.2rem;
+	text-transform: uppercase;
 }
 html a, body a {
-  color: #f8f8f8;
-  text-decoration: none;
-  text-transform: uppercase;
+	color: #f8f8f8;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 html a:hover, body a:hover {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 article {
-  width: 960px;
-  position: absolute;
+	width: 960px;
+	position: absolute;
 }
 
 /* One */
 #one {
-  width: 100%;
-  height: 100%;
-  background: #ffb74a;
+	width: 100%;
+	height: 100%;
+	background: #ffb74a;
 
 }
 #one article {
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -480px;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -480px;
 
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
 }
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #one article h1 {
-  
+	
 }
 
 
 button {
-  border: none;
-  background: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 2.2em;
-  position: absolute;
-  top: 5%;
-  right: 4.5%;
-  padding: 5px 10px;
-  transition:All 0.5s ease;
-  -webkit-transition:All 0.5s ease;
-  -moz-transition:All 0.5s ease;
-  -o-transition:All 0.5s ease;
+	border: none;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2.2em;
+	position: absolute;
+	top: 5%;
+	right: 4.5%;
+	padding: 5px 10px;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
 }
 
 button:hover{
-  padding: 5px 10px;
-  background: rgba(0,0,0,0.1);
-  transition:All 0.5s ease;
-  -webkit-transition:All 0.5s ease;
-  -moz-transition:All 0.5s ease;
-  -o-transition:All 0.5s ease;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0.1);
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
 }
 
 
 #one article .navigation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 #one article .navigation a {
-  height: 60px;
-  width: 80px;
-  border-radius: 2px;
-  font-size: 2.4rem;
-  background: none;
-  bottom: 0;
-  position: fixed;
-  padding-top: 8px;
-  transition:All 0.5s ease;
-  -webkit-transition:All 0.5s ease;
-  -moz-transition:All 0.5s ease;
-  -o-transition:All 0.5s ease;
+	height: 60px;
+	width: 80px;
+	border-radius: 2px;
+	font-size: 2.4rem;
+	background: none;
+	bottom: 0;
+	position: fixed;
+	padding-top: 8px;
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
 }
 
 #one article .navigation a:hover {
-  background: rgba(0,0,0,0.1);
-  transition:All 0.5s ease;
-  -webkit-transition:All 0.5s ease;
-  -moz-transition:All 0.5s ease;
-  -o-transition:All 0.5s ease;
+	background: rgba(0,0,0,0.1);
+	transition:All 0.5s ease;
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
 }
 
 
 /* Two */
 #work {
-  width: 100%;
-  height: 100%;
-  background: #000;
+	width: 100%;
+	height: 100%;
+	background: #000;
 
 }
 #work article {
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
 }
 
 #work article .content {
-  height: 100%;
-  width: 100%;
-  position:absolute;
+	height: 100%;
+	width: 100%;
+	position:absolute;
 
 
 }
 
 #work article #case1{
-  width: 50%;
-  height: 40%;
-  float: left;
-  background: url("../images/adam.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	width: 50%;
+	height: 40%;
+	float: left;
+	background: url("../images/adam.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #work article #case2 {
-  width: 50%;
-  height: 40%;
-  background: url("../images/litteratursider.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  float: left;
+	width: 50%;
+	height: 40%;
+	background: url("../images/litteratursider.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float: left;
 }
 
 #work article #case3 {
-  width: 30%;
-  height: 60%;
-  background: url("../images/resonans.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  float: left;
+	width: 30%;
+	height: 60%;
+	background: url("../images/resonans.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float: left;
 }
 
 #work article #case4 {
-  width: 40%;
-  height: 60%;
-  background: url("../images/mtm.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  float: left;
+	width: 40%;
+	height: 60%;
+	background: url("../images/mtm.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float: left;
 }
 
 #work article #case5 {
-  width: 30%;
-  height: 60%;
-  background: url("../images/lux.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  float: left;
+	width: 30%;
+	height: 60%;
+	background: url("../images/lux.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float: left;
 }
 
 /* Three */
 #three {
-  width: 100%;
-  height: 100%;
-  background: url("http://1.bp.blogspot.com/-KW-MbHFWT4s/TfYilGN3l0I/AAAAAAAAAAU/y-Mqk_nENpE/s1600/257316_10150207962785811_555035810_7708027_5645988_o.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	width: 100%;
+	height: 100%;
+	background: url("http://1.bp.blogspot.com/-KW-MbHFWT4s/TfYilGN3l0I/AAAAAAAAAAU/y-Mqk_nENpE/s1600/257316_10150207962785811_555035810_7708027_5645988_o.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 #three article {
-  top: 250%;
-  left: 50%;
-  margin: -25px 0 0 -480px;
+	top: 250%;
+	left: 50%;
+	margin: -25px 0 0 -480px;
 }
 #three article h1 {
-  font-size: 3rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 50px;
+	font-size: 3rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 50px;
 }
 #three article a {
-  background: #c44b4b;
-  border: 2px solid #c44b4b;
-  padding: 15px 70px;
-  border-radius: 2px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+	background: #c44b4b;
+	border: 2px solid #c44b4b;
+	padding: 15px 70px;
+	border-radius: 2px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 #three article a:hover {
-  background: #2a363b;
-  border-color: #2a363b;
+	background: #2a363b;
+	border-color: #2a363b;
 }
 
 
 /* General styles for all menus */
- 
+
 .cbp-spmenu {
-    background: #ebebeb;
-    position: fixed;
+	background: #ebebeb;
+	position: fixed;
 }
- 
+
 .cbp-spmenu h3 {
-    color: #afdefa;
-    font-size: 1.9em;
-    padding: 20px;
-    margin: 0;
-    font-weight: 300;
-    background: #0d77b6;
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
 }
- 
+
 .cbp-spmenu a {
-    display: block;
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: 300;
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
 }
- 
+
 .cbp-spmenu a:hover {
-    background: #258ecd;
+	background: #258ecd;
 }
- 
+
 .cbp-spmenu a:active {
-    background: #afdefa;
-    color: #47a3da;
+	background: #afdefa;
+	color: #47a3da;
 }
- 
+
 /* Orientation-dependent styles for the content of the menu */
- 
+
 .cbp-spmenu-vertical {
-    width: 340px;
-    height: 100%;
-    top: 0;
-    z-index: 1000;
+	width: 340px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
 }
- 
+
 .cbp-spmenu-vertical a {
-    border-bottom: 1px solid #258ecd;
-    padding: 1em;
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
 }
- 
+
 .cbp-spmenu-horizontal {
-    width: 100%;
-    height: 150px;
-    left: 0;
-    z-index: 1000;
-    overflow: hidden;
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
 }
- 
+
 .cbp-spmenu-horizontal h3 {
-    height: 100%;
-    width: 20%;
-    float: left;
+	height: 100%;
+	width: 20%;
+	float: left;
 }
- 
+
 .cbp-spmenu-horizontal a {
-    float: left;
-    width: 20%;
-    padding: 0.8em;
-    border-left: 1px solid #258ecd;
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
 }
- 
+
 /* Vertical menu that slides from the left or right */
- 
+
 .cbp-spmenu-left {
-    left: -240px;
+	left: -240px;
 }
- 
+
 .cbp-spmenu-right {
-    right: -340px;
+	right: -340px;
 }
- 
+
 .cbp-spmenu-left.cbp-spmenu-open {
-    left: 0px;
+	left: 0px;
 }
- 
+
 .cbp-spmenu-right.cbp-spmenu-open {
-    right: 0px;
+	right: 0px;
 }
- 
- 
+
+
 /* Push classes applied to the body */
- 
+
 .cbp-spmenu-push {
-    overflow-x: hidden;
-    position: relative;
-    left: 0;
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
 }
- 
+
 .cbp-spmenu-push-toright {
-    left: 340px;
+	left: 340px;
 }
- 
+
 .cbp-spmenu-push-toleft {
-    left: -340px;
+	left: -340px;
 }
- 
+
 /* Transitions */
- 
+
 .cbp-spmenu,
 .cbp-spmenu-push {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
- 
+
 /* Example media queries */
+
+@media screen and (max-width: 55.1875em) {
  
-@media screen and (max-width: 55.1875em){
- 
-    .cbp-spmenu-horizontal {
-        font-size: 75%;
-        height: 110px;
-    }
- 
-    .cbp-spmenu-top {
-        top: -110px;
-    }
- 
-    .cbp-spmenu-bottom {
-        bottom: -110px;
-    }
- 
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+	
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+	
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+	
 }
+
+@media screen and (max-height: 26.375em) {
  
-@media screen and (max-height: 26.375em){
- 
-    .cbp-spmenu-vertical {
-        font-size: 90%;
-        width: 190px;
-    }
- 
-    .cbp-spmenu-left,
-    .cbp-spmenu-push-toleft {
-        left: -190px;
-    }
- 
-    .cbp-spmenu-right {
-        right: -190px;
-    }
- 
-    .cbp-spmenu-push-toright {
-        left: 190px;
-    }
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+	
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+	
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+	
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
 }

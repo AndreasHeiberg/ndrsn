@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>ndrsn.dk</title>
+
+  <!--
+Copyright (c) 2013 by Secret Sam (http://codepen.io/seraphzz/pen/jozaw)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <script src="js/classie.js"></script>
+
+
+</head>
+
+<body class="cbp-spmenu-push">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+      
+    </nav>
+
+  <div id="one">
+    <button id="showRightPush"><i class="icon-reorder"></i></button>
+  <article>
+    <h1>
+      <a class="nav" href="index.html#two"><img src="logo.png"></a>
+    </h1>
+
+    <div class="navigation">  
+    
+    <a class="nav down" href="index.html#work"><i class="icon-angle-down"></i></a>
+
+  </div>
+  </article>
+</div>
+<div id="work">
+  <article>
+    <div class="content">
+     
+      <a href="index.html#" id="case1"></a>
+      <a href="index.html#" id="case2"></a>
+      <a href="index.html#" id="case3"></a>
+      <a href="index.html#" id="case4"></a>
+      <a href="index.html#" id="case5"></a>
+
+  </div>
+  </article>
+</div>
+
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+  
+  <script src="js/modernizr.js"></script>
+  <script src="js/index.js" type="text/javascript"></script>
+  <script>
+      var 
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+ 
+showRightPush.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( body, 'cbp-spmenu-push-toleft' );
+    classie.toggle( menuRight, 'cbp-spmenu-open' );
+    disableOther( 'showRightPush' );
+};
+ 
+function disableOther( button ) {
+    if( button !== 'showRightPush' ) {
+        classie.toggle( showRightPush, 'disabled' );
+    }
+}
+    </script>
+
+</body>
+
+</html>
